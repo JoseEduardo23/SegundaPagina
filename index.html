@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="Estilos/style.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <fieldset class="Container">
+        <form class="Datos" id="form">
+            <p>Estudiante Jose Lincango</p>
+            <h1>Formulario Interactivo</h1>
+            <label for="Nomb">Nombre: <br> <input class="I1" type="text" required id="Nomb"></label><br>
+            <label for="Apel">Apellidos: <br> <input class="I1" type="text" required id="Apel"></label><br>
+            <label for="Email">Correo: <br> <input class="I1" type="email" required id="Email"></label><br>
+            <label for="Ano">Año de nacimiento <br> <input class="I1" type="number" required id="Año"></label><br>
+            <label for="Edad">Edad: <br> <input class="I1" type="number" required id="Edad"></label><br>
+            <label for="Peso">Peso (kg): <br> <input class="I1" type="number" required id="Peso" step="0.01"></label><br>
+            <label for="Altura">Altura (m): <br><input class="I1" type="number" required id="Altura" step="0.01"></label><br><br>
+            <button class="B1" type="button" onclick="GuardarDatos()">ENVIAR</button>
+        </form>
+    </fieldset>
+    <fieldset class="DATOSC">
+        <div class="Contenedor2">
+            <p>Nombre: <input class="Copias" type="text" id="Cnomb"></p><br>
+            <p>Apellido: <input class="Copias" type="text" id="Capel"></p><br>  
+            <p>Correo: <input class="Copias" type="text" id="Cemail"></p><br>
+            <p>Edad Calculada: <input class="Copias" type="number" id="CEdad"> </p><br>
+            <p>Condición: <input class="Copias" type="text" id="Condi"></p><br>
+            <p>IMC: <input class="Copias" type="number" id="CIMC"></p><br>
+            <p>Año de nacimiento: <input class="Copias" type="text" id="AñoN"></p><br>
+        </div>
+    </fieldset>
+</body>
+</html>
