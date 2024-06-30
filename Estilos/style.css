@@ -53,9 +53,9 @@ h1 {
 }
 
 /* Responsive Design */
-@media (max-width: 1400px) {
+@media (max-width: 500px) {
     .Container, .DATOSC {
-        width: 100%;
+        width: calc(100% - 25px);
         margin-left: 0;
     }
 
@@ -68,7 +68,7 @@ h1 {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
     .I1, .B1 {
         width: 100%;
         margin-left: 0;
