@@ -1,29 +1,35 @@
-body{
+body {
     background-color: beige;
 }
-.Container{
+
+.Container {
+    flex-wrap: wrap;
+    display: flex;
     align-items: center;
     align-content: center;
     justify-content: center;
-    display: flex;
     width: calc(100% - 1300px);
     height: 500px;
     margin-left: 650px;   
     margin-top: 100px;
     border-radius: 6px;
 }
-h1{
+
+h1 {
     margin-left: 14px;
 }
-.Datos{
+
+.Datos {
     margin-top: 20px;
 }
-.I1{
+
+.I1 {
     height: 20px;
     width: 340px;
     border-radius: 6px;
 }
-.B1{
+
+.B1 {
     width: 340px;
     height: 35px;
     margin-left: 4px;
@@ -31,7 +37,8 @@ h1{
     background-color: rgb(79, 161, 243);
     color: white;
 }
-.DATOSC{
+
+.DATOSC {
     border-radius: 6px;
     align-items: center;
     justify-content: center;
@@ -40,6 +47,30 @@ h1{
     margin-left: 650px;
     margin-top: 100px;
 }
-.Copias{
+
+.Copias {
     border-radius: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 1400px) {
+    .Container, .DATOSC {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .Container {
+        margin-top: 50px;
+    }
+
+    .DATOSC {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .I1, .B1 {
+        width: 100%;
+        margin-left: 0;
+    }
 }
